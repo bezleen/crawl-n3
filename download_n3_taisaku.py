@@ -11,7 +11,7 @@ dotenv.load_dotenv()
 class DownloadN3Taisaku(DownloadBase):
     def __init__(self, output_folder):
         self.output_folder = output_folder
-        self.skeleton_video_url = 'https://jpcdn.riki.edu.vn/Data/upload/files/Video/N3taisaku/nguphapMonss/N3TSK-nguphap-{lesson}-{part}{fix}.mp4.hls/1080p'
+        self.skeleton_video_url = 'https://jpcdn.riki.edu.vn/Data/upload/files/Video/N3taisaku/nguphapMonss/N3TSK-nguphap-{lesson}-{part}{fix}.ts.hls/1080p'
         self.tail_url = '/index{index}.ts'
         # 20 lessons
         self.lessons = list(range(1, 21))
