@@ -1,3 +1,4 @@
+# RUN manually - entirely detach the process from terminal
 ## require before run
 ```
 sudo apt-get update \
@@ -26,4 +27,12 @@ vim .env
 ## RUN
 ```
 supervisord -n -c /etc/supervisor/supervisord.conf
+```
+
+# Run by docker
+## set ENV
+## change run command in docker-compose.yaml
+## Run
+```
+docker-compose up -d --build
 ```

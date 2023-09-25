@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  app:
+    container_name: crawler
+    build: .
+    volumes:
+      - ./n3_junbi:/webapp/n3_junbi
+      - ./n3_taisaku:/webapp/n3_taisaku
+      - ./n3_luyende:/webapp/n3_luyende
+    environment:
+      - PYTHONUNBUFFERED=true
+    env_file:
+      - .env
+    command: tail -f /dev/null
