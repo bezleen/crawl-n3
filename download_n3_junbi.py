@@ -15,7 +15,9 @@ class DownloadN3Junbi(DownloadBase):
         self.skeleton_video_url = 'https://jpcdn.riki.edu.vn/Data/upload/files/Video/N3Junbi/N3kanjiKaizen/N3-junbi-kaizen-{lesson}-{part}{fix}.mp4.hls/1080p'
         self.tail_url = '/index{index}.ts'
         # 35 lessons
-        self.lessons = list(range(1, 36))
+        # FIXME: uncomment the following if you need to download all
+        # self.lessons = list(range(1, 36))
+        self.lessons = [3, 4, 5, 27, 28, 29, 30, 31, 32, 33, 34, 35]
         # each lesson has 2 or 3 parts
         self.parts = list(range(1, 4))
         # fix_num should try from -3 -2 -1 to ""

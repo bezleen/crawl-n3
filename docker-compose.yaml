@@ -12,7 +12,7 @@ services:
       - PYTHONUNBUFFERED=true
     env_file:
       - .env
-    command: python download_n3_taisaku_missing.py
+    # command: python download_n3_taisaku_missing.py
     # command: python download_n3_taisaku.py
-    # command: python download_n3_junbi.py
+    command: python download_n3_junbi.py
     # command: python download_n3_luyende.py
