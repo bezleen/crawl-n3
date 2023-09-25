@@ -34,11 +34,11 @@ class DownloadN3Junbi(DownloadBase):
         self.init_lesson_folder()
         for lesson in self.lessons:
             output_folder = f"{self.output_folder}/Lesson{lesson}"
-            time.sleep(5)
+            # time.sleep(5)
             for part in self.parts:
-                time.sleep(5)
+                # time.sleep(5)
                 for fix in self.fixes:
-                    time.sleep(5)
+                    # time.sleep(5)
                     video_url = copy.deepcopy(self.skeleton_video_url)
                     video_url = video_url.format(lesson=lesson, part=part, fix=fix)
                     video_url += self.tail_url
